@@ -1,0 +1,271 @@
+<!-- 
+ Tag 	Description
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+ -->
+
+<!doctype html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <title>
+    List
+  </title>
+
+  <style>
+    body {
+      background-color: cadetblue;
+      color: black;
+      */
+      /* font-size: 25px; */
+    }
+
+    .Yes {
+      background-color: black;
+      color: white;
+    }
+
+    .No {
+      background-color: cadetblue;
+      color: black;
+    }
+  </style>
+
+<body>
+  <b> <u>
+      <p style="text-align: right;"> Dark Mode </b> </u> <br>
+  <input type="radio" id="Yes" name="DarkMode" value="Yes" onclick="myFunction()">
+  <label for="Yes">Yes</label> <br>
+  <input type="radio" id="No" name="DarkMode" value="No" onclick="myFunctions()">
+  <label for="No">No</label>
+
+
+
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("Yes");
+
+    }
+  </script>
+  <script>
+    function myFunctions() {
+      var element = document.body;
+      element.classList.toggle("No");
+    }
+  </script>
+  </p>
+
+
+  <h1>
+    HTML lists allow web developers to group a set of related items in lists.
+  </h1>
+  <u>
+    <h2 style="text-align:left"> Types of List are
+  </u> : - <br>
+
+  1.Order List <br>
+  2.Unorder List <br>
+  3.Data Details List <br>
+
+  <br>
+  ol : An ordered list. This will use different schemes of numbers to list your items. <br>
+  ul : An unordered list. This will list items using plain bullets. <br>
+  dl : A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+
+  <br>
+  <hr>
+  <h2 style="text-align:center"> Order List <br> </h2>
+  <hr>
+  <ol> <b>
+      <li> Nepal </li>
+      <li> Afghanistan </li>
+      <li> Bangladesh </li>
+      <li> Bhutan </li>
+      <li> Maldives </li>
+      <li> Pakistan </li>
+      <li> Sri Lanka </li>
+      <li> India </li>
+
+      <ol type="a"> <b>
+          <li> Nepal </li>
+          <li> Afghanistan </li>
+          <li> Bangladesh </li>
+          <li> Bhutan </li>
+          <li> Maldives </li>
+          <li> Pakistan </li>
+          <li> Sri Lanka </li>
+          <li> India </li>
+
+          <ol style="list-style:lower-roman;"> <b>
+              <li> Nepal </li>
+              <li> Afghanistan </li>
+              <li> Bangladesh </li>
+              <li> Bhutan </li>
+              <li> Maldives </li>
+              <li> Pakistan </li>
+              <li> Sri Lanka </li>
+              <li> India </li>
+
+              <!-- SAARC Countries <-- Nepal,Afghanistan, Bangladesh, Bhutan,Maldives,Pakistan,Sri Lanka and India -->
+          </ol>
+      </ol>
+
+
+
+      <hr>
+      <h2 style="text-align: center;">UnOrder List </h2>
+      <hr>
+      <ul style="text-align: left;"> <b>
+          <li> Nepal </li>
+          <li> Afghanistan </li>
+          <li> Bangladesh </li>
+          <li> Bhutan </li>
+          <li> Maldives </li>
+          <li> Pakistan </li>
+          <li> Sri Lanka </li>
+          <li> India </li>
+
+          <ul style="list-style-type:circle"> <b>
+              <li> Nepal </li>
+              <li> Afghanistan </li>
+              <li> Bangladesh </li>
+              <li> Bhutan </li>
+              <li> Maldives </li>
+              <li> Pakistan </li>
+              <li> Sri Lanka </li>
+              <li> India </li>
+
+              <ul style="list-style-type:disc"> <b>
+                  <li> Nepal </li>
+                  <li> Afghanistan </li>
+                  <li> Bangladesh </li>
+                  <li> Bhutan </li>
+                  <li> Maldives </li>
+                  <li> Pakistan </li>
+                  <li> Sri Lanka </li>
+                  <li> India </li>
+
+
+              </ul>
+          </ul>
+      </ul>
+      </ul>
+
+
+      <hr>
+
+      <h2 style="text-align: center;"> Data Details List</h2>
+      <hr>
+      <u>
+        <dl style="font-size: x-large;"> Nepal </dl>
+      </u>
+
+
+      <dl>
+        <dt>Pradesh No 1</dt>
+
+        <dd>- Morang</dd>
+        <dd>- Sunsari</dd>
+        <dd>- Jhapa</dd>
+        <dd>- Bhojpur</dd>
+        <dd>- Dhankuta </dd>
+        <dd>- Ilam </dd>
+        <dd>- Jhapa </dd>
+        <dd>- Khotang </dd>
+        <dd>- Morang </dd>
+        <dd>- Okhaldhunga </dd>
+        <dd>- Panchthar </dd>
+        <dd>- Sankhuwasabha </dd>
+        <dd>- Solukhumbu </dd>
+        <dd>- Sunsari </dd>
+        <dd>- Taplejung </dd>
+        <dd>- Terhathum </dd>
+        <dd>- Udayapur </dd>
+
+
+        <dt> Pradesh No 2</dt>
+        <dd>- Bara </dd>
+        <dd>- Rautahat</dd>
+        <dd>- Sarlahi</dd>
+        <dd>- Dhanusha</dd>
+        <dd>- Parsa</dd>
+        <dd>- Siraha</dd>
+        <dd>- Mahottari</dd>
+        <dd>- Saptari</dd>
+
+        <dt>Bagmati Pradesh</dt>
+        <dd>-Sindhuli</dd>
+        <dd>- Ramechhap</dd>
+        <dd>- Dolakha</dd>
+        <dd>- Bhaktapur</dd>
+        <dd>- Dhading</dd>
+        <dd>- Kathmandu</dd>
+        <dd>- Kavrepalanchok</dd>
+        <dd>- Lalitpur</dd>
+        <dd>- Nuwakot</dd>
+        <dd>- Rasuwa</dd>
+        <dd>- Sindhupalchok </dd>
+        <dd>- Chitwan </dd>
+        <dd>- Makwanpur </dd>
+
+        <dt>Gandaki Pradesh</dt>
+        <dd>- Baglung</dd>
+        <dd>- Gorkha</dd>
+        <dd>- Kaski</dd>
+        <dd>- Lamjung</dd>
+        <dd>- Manang </dd>
+        <dd>- Mustang</dd>
+        <dd>- Myagdi</dd>
+        <dd>- Nawalpu</dd>
+        <dd>- Parbat</dd>
+        <dd>- Syangja</dd>
+        <dd>- Tanahun</dd>
+
+        <dt>Lumbini Pradesh</dt>
+        <dd>- Kapilvastu</dd>
+        <dd>- Parasi</dd>
+        <dd>- Rupandehi</dd>
+        <dd>- Arghakhanchi
+        <dd>- Gulmi</dd>
+        <dd>- Palpa</dd>
+        <dd>- Dang Deukhuri</dd>
+        <dd>- Pyuthan</dd>
+        <dd>- Rolpa</dd>
+        <dd>- Eastern</dd>
+        <dd>- Banke</dd>
+        <dd>- Bardiya</dd>
+
+        <dt>Karnali Pradesh</dt>
+        <dd>- Western Rukum</dd>
+        <dd>- Salyan</dd>
+        <dd>- Dolpa</dd>
+        <dd>- Humla</dd>
+        <dd>- Jumla</dd>
+        <dd>- Kalikot</dd>
+        <dd>- Mugu</dd>
+        <dd>- Surkhet</dd>
+        <dd>- Dailekh</dd>
+        <dd>- Jajarkot</dd>
+
+        <dt>Sudur Pachhim Pradesh</dt>
+        <dd>- Kailali</dd>
+        <dd>- Achham</dd>
+        <dd>- Doti</dd>
+        <dd>- Bajhang</dd>
+        <dd>- Bajura</dd>
+        <dd>- Kanchanpur</dd>
+        <dd>- Dadeldhura</dd>
+        <dd>- Baitadi</dd>
+        <dd>- Darchula</dd>
+
+      </dl>
+      </head>
+
+</html>
