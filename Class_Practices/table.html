@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>
+        Table
+    </title>
+    <marquee direction="right"> HTML Table </marquee>
+
+
+<body style="background-color: rgb(143, 212, 214);"></body>
+
+
+
+<hr>
+<h1 style="text-align : Center"> HTML tables allow web developers to arrange data into rows and columns. </style>
+    <hr>
+</h1>
+<h2>
+    The <u>table</u> tag defines an HTML table. <br>
+
+    1. Each table row is defined with a <u>tr</u> tag . <br>
+    2. Each table header is defined with a <u>th</u> tag.<br>
+    3. Each table data/cell is defined with a <u>td</u> tag. <br>
+
+    4. By default, the text in <u>th</u> elements are bold and centered. <br>
+
+    5. By default, the text in
+    <u>td</u> elements are regular and left-aligned.
+</h2>
+<hr>
+<hr>
+<h3>
+    <ul style="list-style: square;">
+        <li>Use the HTML <u>caption</u> element to define a table caption</li>
+        <li>Use the CSS border property to define a border</li>
+        <li>Use the CSS border-collapse property to collapse cell borders</li>
+        <li>Use the CSS padding property to add padding to cells</li>
+        <li>Use the CSS text-align property to align cell text</li>
+        <li>Use the CSS border-spacing property to set the spacing between cells</li>
+        <li>Use the colspan attribute to make a cell span many columns</li>
+        <li>Use the rowspan attribute to make a cell span many rows</li>
+        <li>Use the id attribute to uniquely define one table</li>
+    </ul>
+</h3>
+<hr>
+<h3 style="text-align: center;"> Simple Table
+
+    <hr>
+    <!-- <table width="50%" style="border:5px dotted"> -->
+    <table width="50%" border="5px">
+
+
+        <tr>
+            <th>S.N</th>
+            <th>Name</th>
+            <th>PhoneNo</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sava</td>
+            <td>9812345678</td>
+            <td>Kathmandu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Samata</td>
+            <td>9812345678</td>
+            <td>Pokhara</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>9812345678</td>
+            <td>Illam</td>
+        </tr>
+
+    </table>
+
+    <!-- </h3><br><hr> -->
+    <br>
+    <hr>
+    <h3 style="text-align: center;">Rowspan
+        <hr>
+        <table width="50%" border="10px">
+            <tr>
+                <th>Pragram</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Rollno</th>
+            </tr>
+            <tr>
+                <td rowspan="2">C,C++ </td>
+                <td>Dani</td>
+                <td>BCA</td>
+                <td>1</td>
+            <tr>
+                <td>Elex</td>
+                <td>BCA</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td rowspan="3">C# </td>
+                <td>Harry</td>
+                <td>BIT</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>BIT</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>BIT</td>
+                <td>3</td>
+            </tr>
+
+            </tr>
+        </table><br>
+        <hr>
+        <h3 style="text-align: center;">ColSpan
+            <hr>
+            <table width="50%" border="15px" </table>
+                <tr>
+                    <th>Name</th>
+                    <th>RoomNO</th>
+                    <th>BCA</th>
+                    <th>BIT</th>
+                    <th>BE</th>
+
+
+                </tr>
+                <tr>
+                    <td>Ted</td>
+                    <td>101</td>
+                    <td colspan="3">BCA</td>
+                </tr>
+                <tr>
+                    <td>Hord</td>
+                    <td>102</td>
+                    <td colspan="3"> BIT</td>
+                </tr>
+                <tr>
+                    <td>Jevus</td>
+                    <td>103</td>
+                    <td colspan="3">BE</td>
+                </tr>
+        </h3>
+        </head>
+
+</html>
