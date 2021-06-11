@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng1">
+
+<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Backgrondflip</title>
+        <style>
+            body {
+                background-color: black;
+                color: white
+            }
+        </style>
+        <style>
+            .mydiv {
+
+                border: 5px outset red;
+                background-color: black;
+                text-align: center;
+                color: white;
+                position: absolute;
+                /* display: inline; */
+                top: 30%;
+                left: 45%;
+                right: 45%;
+            }
+
+            .mydiv2 {
+                background-color: darkcyan;
+                color: white;
+                text-align: center;
+
+            }
+        </style>
+
+        <h1 class="mydiv2">
+            <hr>
+            <hr>
+            Background Color Flipper
+            <hr>
+            <hr>
+        </h1>
+        <div class="mydiv">
+            <h2 onclick="clicktochange()"> <u>Click Me </u>
+            </h2>
+        </div>
+
+
+        <script>
+            var place = 0;
+            function clicktochange() {
+                // your color list
+                var colorList = ["#faebd7", "#a4c639", "#5d8aa8", "#f0f8ff", "#b5a642", "#cb4154", "#bf94e4", "#004225", "#f0dc82", "#536872", "#91a3b0", "#fad6a5", "#6f4e37", "#fff8dc", "#990000", "#008b8b", "#d40000", "#1a2421", "#483c32", "#556b2f", "#560319", "#8fbc8f", "#2f4f4f", "#483c32", "#555555", "#fad6a5", "#704241", "#c19a6b", "#a9ba9d", "#ab4e52"];
+                // set the color
+                document.body.style.backgroundColor = colorList[place];
+                place++;
+                // if place is greater than the list size, reset
+                if (place == colorList.length) place = 0;
+            }
+        </script>
+
+
+
+    </head>
+
+</html>
